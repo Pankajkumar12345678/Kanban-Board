@@ -1,54 +1,61 @@
-# Kanban Board ✨
+# 📋 Kanban Task Management Application
 
-The Kanban Board React.js application is a dynamic project designed to streamline task management and enhance productivity. Developed with the modern web technology of React.js, this application serves as a visual project management tool, leveraging the intuitive Kanban methodology, a popular project management technique that emphasizes visualizing workflow and optimizing task management.
+A full-featured **Kanban application** for efficient task management and workflow visualization. This application supports user registration, login, task assignments, and a responsive, drag-and-drop interface for managing tasks across customizable boards and lists.
 
-It empowers users to organize tasks into boards, columns, and cards, facilitating a clear and visual representation of project progress. The application allows for seamless collaboration among team members, with the ability to assign tasks, set due dates, and track the status of each task in real-time. With a user-friendly interface and robust functionality, the Kanban Board React.js application is tailored to meet the evolving needs of project teams, providing a visual and efficient solution for task management and project coordination.
+---
 
-![Kanban Board](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqA9xbhC5g5D6_iYXGgWUWMYY5qY7wygUr4m7bMCjieOCslHZRpLIAsgcyrLtPMkSOivldQcql322Z5GQX5ZH1D_sCsMCSxqo_ksKNZwRsfJMjcDLGQ1dA8YErXvE6j0SDH8nzGExFm1BJjh029cz_9qBVrHPT0bNOTEv4XH2dHi02kQ7SqT7_jnlz4uZf/w1200-h1200/26.png)
+## 🌟 Features
 
-### Key Features 💡
+- **🔐 User Authentication**
+  - User registration and login/logout
+  - Personalized dashboards and Kanban boards
 
-- Visual project management with Kanban methodology
-- React.js-powered application
-- Task organization into boards, columns, and cards
-- Task assignment, due date setting, with proper labeling
-- User-friendly interface
-- Support for tracking task status
-- Drag-and-drop feature for enhanced task management
-- Aimed at increasing productivity in task and project coordination
+- **🗂️ Kanban Boards**
+  - Create multiple boards for different projects or workflows
+  - Each board contains customizable lists and draggable cards
 
-## User Interface (UI)
+- **📝 Task Management**
+  - Create cards with:
+    - Titles
+    - Descriptions
+    - Due dates
+    - File attachments
+    - Assigned users
+  - Move cards between lists using drag-and-drop functionality
 
-![Kanban Board UI Snaps](https://blogger.googleusercontent.com/img/a/AVvXsEiozHJuKjidUsGyk2Px4Mc3W-4olE0eFP_mXR2Z67flaL4ELTzAXA5yzgYOS7swIzZJiLYtQi9xBPpiW_htR5dmDszryl7J2GgoEi6yzASPaE1oZn51JaCRiRtPIXEsbNLBewGhH8j2NARCOkNKPPWWQm_w5A8n6o6KKHfqq4v0BArFXUHa47U_p2W9nI0e=w1200-h1200)
+- **🖱️ Drag and Drop**
+  - Smooth drag-and-drop interface for reordering cards within and across lists
 
-![Kanban Board UI Snaps](https://blogger.googleusercontent.com/img/a/AVvXsEgH0HeM8ZrgUZH7hs2KObdncangm7qo9HLIz8INd_Gnmi1pf-wuBJAe36fOoGAUmlhZizrroNzcJoZbOsEewZL01767RrcC_-Uu4k-VY3YxF7GoH6-7K6rV2EkdwbRXUS2No6U7vlNUUdcWobNuMHFGsTPBR5BV6gJ0vCSnRyipnqGe7TT9UhhtrEF0yC9o=w1200-h1200)
+- **📱 Responsive UI/UX**
+  - Works seamlessly across desktop, tablet, and mobile devices
+  - Modern, clean, and intuitive design
 
-## Setup Guide ⚙️
+---
 
-Follow these steps to set up and run the Kanban Board application locally:
 
-1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/Pankajkumar12345678/Kanban-Board.git
-   cd Kanban-Board
-   ```
+### 📦 Installation
 
-2. **Installing Dependencies:**
+```bash
+git clone https://github.com/Pankajkumar12345678/Kanban-Board.git
+cd Kanban-Board
+npm install
+```
 
-   ```bash
-    npm install
-   ```
+Create a `.env.local` file in the root directory with the following variables:
+```bash
+# MongoDB connection string
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/kanban
 
-3. **Starting the Repo**
+# JWT Secret for authentication
+JWT_SECRET=your_jwt_secret
 
-   Begin the application with the following command in the directory:
+# Next.js environment variable
+NEXT_PUBLIC_API_URL=http://localhost:3000
+   
+```
 
-   ```
-   npm start
-   ```
-
-   **Accessing the Application**
-
-   You're all set! Open your browser and go to http://localhost:3000 to access the Kanban-Board application.
-
+Run the development server:
+```bash
+npm run dev
+```
